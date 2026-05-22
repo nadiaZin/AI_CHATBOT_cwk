@@ -1,0 +1,6 @@
+# Environment
+venv/
+ENV/
+env/
+split_dataset/
+dataset/book_model.keras

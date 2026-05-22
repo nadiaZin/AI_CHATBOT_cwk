@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0.1">
+
+<!-- Greetings and Politeness -->
+<category> <pattern> HELLO </pattern>
+  <template>Hello! How are you?</template> </category>
+
+<category> <pattern> HELLO * </pattern>
+  <template><srai>HELLO</srai></template> </category>
+
+<category> <pattern> HI </pattern>
+  <template><srai>HELLO</srai></template> </category>
+
+<category> <pattern> HI * </pattern>
+  <template><srai>HELLO</srai></template> </category>
+
+<category> <pattern> HOW ARE YOU </pattern>
+  <template>I'm functioning within normal parameters, thanks for asking.</template></category>
+
+<category><pattern> I AM FINE </pattern>
+  <template>That's good to know. What would you like to discuss about?</template></category>
+
+<category><pattern> BYE </pattern>
+  <template>#0$Bye! Nice talking to you. You take care now.</template></category>
+
+<category><pattern> GOODBYE </pattern>
+  <template><srai>BYE</srai></template></category>
+
+<category><pattern> EXIT </pattern>
+  <template><srai>BYE</srai></template></category>
+
+<category> <pattern> THANKS </pattern>
+  <template>You are welcome.</template></category>
+
+<category> <pattern> THANK YOU </pattern>
+  <template><srai>THANKS</srai></template></category>
+
+<category> <pattern> CHEERS </pattern>
+  <template>Sure mate.</template></category>
+
+<category> <pattern> CHEERS * </pattern>
+  <template>Sure mate.</template></category>
+
+<!--- Wikipedia API -->
+<category><pattern> WHAT IS A * </pattern>
+  <template>#1$<star index="1"/></template></category>
+
+<category><pattern> WHAT IS AN * </pattern>
+  <template><srai>WHAT IS A <star/></srai></template></category>
+
+<category><pattern> WHAT IS * </pattern>
+  <template><srai>WHAT IS A <star/></srai></template></category>
+
+<category><pattern> DEFINE * </pattern>
+  <template><srai>WHAT IS A <star/></srai></template></category>
+
+<category><pattern> WHO IS * </pattern>
+  <template><srai>WHAT IS A <star/></srai></template></category>
+
+<!--- Books -->
+<category>
+    <pattern>BOOK CATEGORIES</pattern>
+    <template>
+        Ask about any category, e.g Fiction, Nonfiction, Science, and Fantasy.
+    </template>
+</category>
+
+<category> <pattern> CATEGORIES </pattern>
+  <template><srai>BOOK CATEGORIES</srai></template> </category>
+
+<category>
+    <pattern>FICTION</pattern>
+    <template>
+        Fiction includes novels, fantasy, and short stories.
+    </template>
+</category>
+
+<category>
+    <pattern>NONFICTION</pattern>
+    <template>
+        Nonfiction includes biographies and real-life topics.
+    </template>
+</category>
+
+<category>
+    <pattern>SCIENCE</pattern>
+    <template>
+        Science books explore discoveries and scientific ideas.
+    </template>
+</category>
+
+<category>
+    <pattern>HISTORY</pattern>
+    <template>
+        History books cover events from the past.
+    </template>
+</category>
+
+<category>
+    <pattern>SCIENCE FICTION</pattern>
+    <template>
+        Science fiction books explore futuristic technology, space travel, and advanced science.
+    </template>
+</category>
+
+<category>
+    <pattern>HORROR</pattern>
+    <template>
+        Horror books are designed to frighten and create suspense.
+    </template>
+</category>
+
+<category>
+    <pattern>ROMANCE</pattern>
+    <template>
+        Romance books focus on relationships, love stories, and emotional journeys.
+    </template>
+</category>
+
+<category>
+    <pattern>NONFICTION</pattern>
+    <template>
+        Nonfiction books are based on real events, real people, and factual information.
+    </template>
+</category>
+
+<category>
+    <pattern>TELL ME ABOUT FANTASY</pattern>
+    <template>
+        Fantasy books include magical worlds, mythical creatures, and heroic adventures.
+    </template>
+</category>
+
+<category>
+    <pattern>EPIC FANTASY</pattern>
+    <template>
+        Epic fantasy usually features large worlds, magic, and heroic quests.
+    </template>
+</category>
+
+<category>
+    <pattern>URBAN FANTASY</pattern>
+    <template>
+        Urban fantasy mixes magic with modern city life.
+    </template>
+</category>
+
+<category>
+    <pattern>DARK FANTASY</pattern>
+    <template>
+        Dark fantasy blends magic with darker, sometimes horror themes.
+    </template>
+</category>
+
+<category>
+    <pattern>RECOMMEND A FANTASY BOOK</pattern>
+    <template>
+        I recommend The Hobbit or The Name of the Wind.
+    </template>
+</category>
+
+<category>
+    <pattern>I LIKE DRAGONS</pattern>
+    <template>
+        You might enjoy fantasy books that feature dragons and magical battles.
+    </template>
+</category>
+
+<category>
+  <pattern>HELP</pattern>
+  <template>#2$help</template>
+</category>
+
+<category>
+  <pattern>WHAT CAN YOU DO</pattern>
+  <template><srai>HELP</srai></template>
+</category>
+
+</aiml>
